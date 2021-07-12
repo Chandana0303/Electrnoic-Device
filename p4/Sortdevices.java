@@ -19,7 +19,7 @@ public class Sortdevices {
 	 */
 	public static void main(String[] args)
 	{
-		/*Set<ElectronicDevice> elecSet = getdata();
+		Set<ElectronicDevice> elecSet = getdata();
 		
 		
 		
@@ -50,7 +50,7 @@ public class Sortdevices {
 	}
 	
 	public static Set<ElectronicDevice> getdata()
-	{*/
+	{
 		Set<ElectronicDevice> elecSet =  new TreeSet();
 		elecSet.add(new Laptop(1,25,"HP","Black",15000, 10, false));
 		elecSet.add(new Laptop(2,12,"ASUS","Blue",45000, 16, true));
@@ -67,16 +67,16 @@ public class Sortdevices {
 		elecSet.add(new TV(10,46,"Sony","white",40000, 16, false));
 		elecSet.add(new TV(11,32,"mi","black",25000, 8, true));
 		elecSet.add(new TV(12, 46,"lg","black",30000, 4, false));
+	
+		return(elecSet);
 		
-		/*return(elecSet);*/
-		
-		doPrint(elecSet,"Default data rendering");
+		/*doPrint(elecSet,"Default data rendering");
 		
 		List<ElectronicDevice> pricebasedlist = new ArrayList<>();
 		pricebasedlist.addAll(elecSet);
 		
 		Collections.sort(pricebasedlist, new SortDevicesBasedOnPrice());
-		doPrint(pricebasedlist,"Data after sorting");
+		doPrint(pricebasedlist,"Data after sorting");*/
 		
 	}
 		
