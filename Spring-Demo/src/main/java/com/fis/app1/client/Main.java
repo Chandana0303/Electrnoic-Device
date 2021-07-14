@@ -15,8 +15,8 @@ public class Main {
 		ElectronicDevice device = (ElectronicDevice)spring.getBean("newdevice1");
 		System.out.println(device);
 		
-		//ElectronicDevice device1 = (ElectronicDevice)spring.getBean("newdevice2");
-		//System.out.println(device1);
+		ElectronicDevice device1 = (ElectronicDevice)spring.getBean("newdevice2");
+		System.out.println(device1);
 		
 	}
 

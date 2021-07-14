@@ -9,8 +9,8 @@ public class ElectronicDevice implements Serializable,Comparable<ElectronicDevic
 	private String brandname;
 	private String colour;
 	private int price;
-	
 	private Laptop l;
+	private Mobile m;
 	
 	ElectronicDevice() {
 		super();
@@ -24,6 +24,26 @@ public class ElectronicDevice implements Serializable,Comparable<ElectronicDevic
 		this.brandname = brandname;
 		this.colour = colour;
 		this.price = price;
+	}
+
+		
+	public Mobile getM() {
+		return m;
+	}
+
+
+	public void setM(Mobile m) {
+		this.m = m;
+	}
+
+
+	public Laptop getL() {
+		return l;
+	}
+
+
+	public void setL(Laptop l) {
+		this.l = l;
 	}
 
 
@@ -94,9 +114,10 @@ public class ElectronicDevice implements Serializable,Comparable<ElectronicDevic
 		return "ElectronicDevice [serialno=" + serialno + ", brandname=" + brandname + ", colour=" + colour + ", price="
 				+ price + "]";
 		}
-		return "serialno"+"-"+"brandname"+"-"+"colour"+"-"+"laptopbrand"+"-"+"ramsize"+"-"+"price";
+		return serialno+"-"+brandname+"-"+colour+"-"+l.getDevicetype()+"-"+l.getRamsize()+"-"+price;
 	}
-
+	
+	
 
 	@Override
 	public int compareTo(ElectronicDevice device) {

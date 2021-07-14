@@ -5,27 +5,31 @@
 	  http://www.springframework.org/schema/beans/spring-beans.xsd">
 	  
 	  
-	  <bean id="newdevice1" class="com.fis.app1.model.ElectronicDevice">
-	  		<constructor-arg value = "serialno" name ="567" ></constructor-arg>
-	  		<constructor-arg value = "brandname" name ="HP-laptop" ></constructor-arg>
-	  		<constructor-arg value = "colour" name ="Black" ></constructor-arg>
-	  		<constructor-arg value = "price" name ="25000" ></constructor-arg>
+	  <bean id="newdevice1" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
+	  		<constructor-arg value = "1" name = "serialno" ></constructor-arg>
+	  		<constructor-arg value = "HP"  name ="brandname" ></constructor-arg>
+	  		<constructor-arg value = "Black" name = "colour" ></constructor-arg>
+	  		<constructor-arg value = "25000" name ="price" ></constructor-arg>
 	  </bean>
 	  
-	  <!--  <bean id="newdevice2" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
-	  		<constructor-arg value = "serialno" name ="123" ></constructor-arg>
-	  		<constructor-arg value = "brandname" name ="MI-Mobile" ></constructor-arg>
-	  		<constructor-arg value = "colour" name ="Black" ></constructor-arg>
-	  		<constructor-arg value = "price" name ="15000" ></constructor-arg>
+	   <bean id="newdevice2" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
+	  		<constructor-arg   value = "123" name ="serialno" ></constructor-arg>
+	  		<constructor-arg   value = "MI" name ="brandname"></constructor-arg>
+	  		<constructor-arg   value = "Black" name ="colour"></constructor-arg>
+	  		<constructor-arg  value = "15000"  name ="price"></constructor-arg>
 	  </bean>
 	  
-	  <bean id="l" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
-	  		<constructor-arg value = "laptopbrand" name ="HP" ></constructor-arg>
-	  		<constructor-arg value = "ramsize" name ="8GB" ></constructor-arg>
+	  <bean id="l" class="com.fis.app1.model.Laptop">
+	  		<constructor-arg value ="Laptop"  name ="devicetype" ></constructor-arg>
+	  		<constructor-arg value = "8GB" name ="ramsize" ></constructor-arg>
 	  
-	  </bean>-->
+	  </bean>
 	  
+	  <bean id="m" class="com.fis.app1.model.Mobile">
+	  		<constructor-arg value ="MI"  name ="mobilebrand" ></constructor-arg>
+	  		<constructor-arg value = "true" name ="bluetooth" ></constructor-arg>
 	  
+	  </bean>
 	  
 	  
 	  
