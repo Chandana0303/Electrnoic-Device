@@ -2,27 +2,25 @@ package com.fis.app1.model;
 
 public class Laptop {
 
-	public String devicetype;
+	public String laptopbrand;
 	public String ramsize;
-	public Laptop() {
+	Laptop() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Laptop(String devicetype, String ramsize) {
+	Laptop(String laptopbrand, String ramsize) {
 		super();
-		this.devicetype = devicetype;
+		this.laptopbrand = laptopbrand;
 		this.ramsize = ramsize;
 	}
 
-	
-
-	public String getDevicetype() {
-		return devicetype;
+	public String getLaptopbrand() {
+		return laptopbrand;
 	}
 
-	public void setDevicetype(String devicetype) {
-		this.devicetype = devicetype;
+	public void setLaptopbrand(String laptopbrand) {
+		this.laptopbrand = laptopbrand;
 	}
 
 	public String getRamsize() {
@@ -35,7 +33,7 @@ public class Laptop {
 
 	@Override
 	public String toString() {
-		return "Laptop [devicetype=" + devicetype + ", ramsize=" + ramsize + "]";
+		return "Laptop [laptopbrand=" + laptopbrand + ", ramsize=" + ramsize + "]";
 	}
 	
 	
