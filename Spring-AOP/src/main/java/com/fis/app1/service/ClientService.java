@@ -2,6 +2,8 @@ package com.fis.app1.service;
 
 import org.springframework.stereotype.Component;
 
+
+
 import com.fis.app1.util.LoggingClass;
 import com.fis.app1.util.SecurityClass;
 
@@ -12,11 +14,15 @@ public class ClientService {
 	{
 		System.out.println("-------------making an order----------");
 	}
-
 	
-	public void doPayment(String payment_type)
+	public void doPayment()
 	{
-		System.out.println("--------------making payment----------"+payment_type);
+		System.out.println("making payment code executing...");
+	}
+
+	public void doPayment(String paymenttype)
+	{
+		System.out.println("making payment - " +paymenttype);
 	}
 
 	

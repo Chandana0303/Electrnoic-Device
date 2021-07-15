@@ -1,16 +1,15 @@
 package com.fis.app1.model;
 
+import java.io.File;
+
+import java.io.PrintWriter;
+import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
-import java.io.Serializable;
-import java.io.File;
-import java.io.FileReader;
-import java.io.PrintWriter;
 
 @Component
 public class ElectronicDevice implements Serializable,Comparable<ElectronicDevice>{
@@ -21,7 +20,7 @@ public class ElectronicDevice implements Serializable,Comparable<ElectronicDevic
 	private String brandname;
 	@Value("${elec.colour}")
 	private String colour;
-	@Value("${elec.price}")
+	@Value("#{new Integer('${elec.price}')}")
 	private int price;
 	private Laptop l;
 	private Mobile m;

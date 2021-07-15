@@ -2,11 +2,13 @@ package com.fis.app1.model;
 
 import java.util.Objects;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class OnlineShopping {
 	
+	//@Autowired
 	private ElectronicDevice device;
 	private String websitename;
 	

@@ -1,6 +1,7 @@
 package com.fis.app1.model;
 
 import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,7 +10,7 @@ public class Client {
 	@Value("Ram")
 	public String customer_name;
 	@Value("9714261862")
-	public int phone_no;
+	public String phone_no;
 
 	Client() {
 		super();
@@ -17,7 +18,7 @@ public class Client {
 	}
 
 
-	Client(String customer_name, int phone_no) {
+	Client(String customer_name,String phone_no) {
 		super();
 		this.customer_name = customer_name;
 		this.phone_no = phone_no;
@@ -35,12 +36,12 @@ public class Client {
 	}
 
 
-	public int getPhone_no() {
+	public String getPhone_no() {
 		return phone_no;
 	}
 
 
-	public void setPhone_no(int phone_no) {
+	public void setPhone_no(String phone_no) {
 		this.phone_no = phone_no;
 	}
 
