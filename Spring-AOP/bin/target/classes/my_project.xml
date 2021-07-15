@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans.xsd">
+	  
+	  
+	  <bean id="newdevice1" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
+	  		<constructor-arg value = "1" name = "serialno" ></constructor-arg>
+	  		<constructor-arg value = "HP"  name ="brandname" ></constructor-arg>
+	  		<constructor-arg value = "Black" name = "colour" ></constructor-arg>
+	  		<constructor-arg value = "25000" name ="price" ></constructor-arg>
+	  </bean>
+	  
+	   <bean id="newdevice2" class="com.fis.app1.model.ElectronicDevice" autowire="byName">
+	  		<constructor-arg   value = "123" name ="serialno" ></constructor-arg>
+	  		<constructor-arg   value = "MI" name ="brandname"></constructor-arg>
+	  		<constructor-arg   value = "Black" name ="colour"></constructor-arg>
+	  		<constructor-arg  value = "15000"  name ="price"></constructor-arg>
+	  </bean>
+	  
+	  <bean id="l" class="com.fis.app1.model.Laptop">
+	  		<constructor-arg value ="Laptop"  name ="devicetype" ></constructor-arg>
+	  		<constructor-arg value = "8GB" name ="ramsize" ></constructor-arg>
+	  
+	  </bean>
+	  
+	  <bean id="m" class="com.fis.app1.model.Mobile">
+	  		<constructor-arg value ="MI"  name ="mobilebrand" ></constructor-arg>
+	  		<constructor-arg value = "true" name ="bluetooth" ></constructor-arg>
+	  
+	  </bean>
+	  
+	  
+	  
+	  
+	 </beans> 
